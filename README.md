@@ -22,7 +22,7 @@ List of Files:
 
 Description of Files:
 StartUp.m
-Defines user prameters and initializes key variables.
+Defines user parameters and initializes key variables.
 
 Main.m
 Main executive model.  controls logic of the program.
@@ -40,4 +40,5 @@ Thrust.m
 Calculates instantaneous CStar, thrust, specific impulse.
 
 PlotData.m
-Plots all results
+Plots all results.
+
