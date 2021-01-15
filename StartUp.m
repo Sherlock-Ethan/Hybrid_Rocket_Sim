@@ -37,7 +37,7 @@ gravity = 9.81;         % gravitation acceleration constant
 % ----- Fuel Grain User Defined Parameters (convered to metric) ----- %
 GrainOD     = 3.374 /In2Mtr;    % Grain OD (m)
 GrainID(1)  = 0.750 /In2Mtr;    % Grain ID (m)
-GrainL      = 11.50 /In2Mtr;    % Grain Length (m)
+GrainL      = 13.50 /In2Mtr;    % Grain Length (m)
 SlotL(1)    = 1.0 /In2Mtr;      % Slot Length (m) - used for CS calc
 StaticL(1)  = SlotL(1);         % Static Slot Length (m) - used for SA calc
 SlotW(1)    = 0.250 /In2Mtr;    % Slot Width (m)
@@ -52,8 +52,9 @@ NOxTankID  = 3.624 /In2Mtr;         % Tank ID (m)
 NOxTankCSA = pi*(NOxTankID/2)^2;    % Tank CS Area (m^2)
 NOxTankVol = NOxTankCSA*NOxTankL;   % Tank Volume (M^3)
 PresDcln   = 1/100;                 % Peressure Decline (%) 
-NEFF       = 1.0;                   % Oxidizer velocity efficiency, set to 1.0 to turn off
-
+NEFF       = 0.6;                   % Oxidizer velocity efficiency,
+                                    % 1.0 to turn of NEFF affect
+                                    % 0.6 for more realistic results
 % ----- Injector Parameters ----- %
 
 InjDia = 0.0625 /In2Mtr;             % Orifice Diameter

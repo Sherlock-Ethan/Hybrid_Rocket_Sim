@@ -6,14 +6,16 @@
 % --------------  --------  ------------------------------
 % Ethan Sherlock  01/09/21  Initial Creation 
 % ---------------------------------------------------------------------- %
-
+Thrustdlvd(n-1) = 0;
+PC(n-1) = 0;
+OFRatio(n-1) = 0;
 figure
 plot(BurnTime,SA)
 title('Fuel Grain Surface Area vs Time')
 xlabel('Time (s)')
 ylabel('Surface Area (m^2)')
 grid on
-ylim([0 0.15])
+ylim([0 0.2])
 
 figure
 plot(BurnTime,PNOx)
@@ -68,15 +70,15 @@ title('Thrust Curve')
 xlabel('Time (s)')
 ylabel('Thrust (N)')
 grid on
-ylim([0 4000])
+ylim([0 3000])
 
 figure
 plot(BurnTime,MassGen)
 title('Total Mass Generated')
 xlabel('Time (s)')
-ylabel('Mass Flow (kg)')
+ylabel('Mass (kg)')
 grid on
-ylim([0.01 0.03])
+ylim([0.01 0.02])
 
 figure
 plot(BurnTime,FuelMass)

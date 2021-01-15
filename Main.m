@@ -1,5 +1,5 @@
 % --------- AIAA Internal Ballistic Simulator code for UCF HPR --------- %
-% File Name: Logic.m 
+% File Name: Main.m 
 % File Description: Main executive model. controls logic of the program
 % 
 % Name            Date      Description
