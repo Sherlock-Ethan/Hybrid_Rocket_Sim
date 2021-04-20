@@ -13,15 +13,19 @@ elseif (OFRatio(n) <= 3)
      CStar(n) = 125 * (OFRatio(n) - 1) + 1250;
 else
      CStar(n) = (-115/7) * (OFRatio(n) - 5) + 1585;
-end        
+end    
+
+if CStar(n) < 0.0
+    CStar = 0;
+end
 
 
-Thrustdlvd(n) = MassGen(n)*CStar(n)/HRMdt;
+Thrustdlvd(n) = MassGen(n)*CStar(n)/HRMdt;  
 
 Impulse(n) = Thrustdlvd(n)*HRMdt;
 
-TotallImp(n) = sum(Impulse(:));
+TotallImp(n) = sum(Impulse(:));                 % Average thrust * burn time
 
-if Thrustdlvd(n) < 0.0
-    StopBurn = true;
-end
+% if Thrustdlvd(n) < 0.0
+%     StopBurn = true;
+% end

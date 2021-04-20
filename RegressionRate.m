@@ -10,10 +10,10 @@
 % Simplified linear regression rate assumption
 BurnRt      = 0.002;        % Burn Rate (m/s)
 
-% if n > 1
-%     if SlotD(n-1) < SlotD(1)*.25
-%        BurnRt = 0.0015;
-%     end
-% end
+if n > 1
+    if SlotD(n-1) < SlotD(1)*.25
+       BurnRt = 0.0015;
+    end
+end
 
 RgrsPerStp = BurnRt*HRMdt;  % Regression Per Step (m)
