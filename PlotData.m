@@ -121,10 +121,10 @@ ylabel('')
 grid on
 
 fprintf('\n------------ Simulation Results ------------\n')
-fprintf('Burn Time:             %.2f   (s)\n', BurnTime(n-1))
+fprintf('Burn Time:             %.2f     (s)\n', BurnTime(n-1))
 fprintf('Average Thrust:        %.2f  (N)\n', mean(Thrustdlvd))
-fprintf('Total Impulse:         %.2f  (Ns)\n', TotallImp(n-1))
-fprintf('Max PN2O:              %.2f  (Psi)\n', max(PNOx)/kPa2Psi)
-fprintf('Max PC:                %.2f  (Psi)\n', max(PC)/kPa2Psi)
-fprintf('Mass N2O:              %.2f  (lbs)\n', max(OxdzrMass)*kg2lbs)
+fprintf('Total Impulse:         %.2f (Ns)\n', TotallImp(n-1))
+fprintf('Max PN2O:              %.2f   (Psi)\n', max(PNOx)/kPa2Psi)
+fprintf('Max PC:                %.2f   (Psi)\n', max(PC)/kPa2Psi)
+fprintf('Mass N2O:              %.2f    (lbs)\n', max(OxdzrMass)*kg2lbs)
 toc
